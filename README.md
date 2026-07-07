@@ -55,7 +55,7 @@ TaskCrafterAI
 Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/KUNJ-CP23/TaskCrafterAI.git
 ```
 
 Install dependencies
@@ -64,11 +64,15 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+## Environment Variables
 
+Create a `.env` file in the project root and add your Gemini API key:
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
-GEMINI_API_KEY=YOUR_API_KEY
-```
+
+You can generate your API key from **Google AI Studio**.
 
 Run the project
 
