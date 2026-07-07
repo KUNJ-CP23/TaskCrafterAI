@@ -86,21 +86,21 @@ python app.py
 
 ### Home Page
 
-![Home](./screenshots/home.png)
+![Home](./screenshots/Home.png)
 
-![Home](./screenshots/home2.png)
+![Home2](./screenshots/Home2.png)
 
 ### Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
 ### Edit Task
 
-![Edit](./screenshots/edit.png)
+![Edit](./screenshots/Edit.png)
 
 ### Search
 
-![Search](./screenshots/search.png)
+![Search](./screenshots/Search.png)
 
 ---
 
