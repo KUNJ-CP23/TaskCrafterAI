@@ -84,8 +84,6 @@ python app.py
 
 ## 📸 Screenshots
 
-## Screenshots
-
 ### Home Page
 
 ![Home](screenshots/home.png)
