@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FDF2F8;
+
+}
+
+.navbar{
+
+    background:linear-gradient(90deg,#EC4899,#F472B6);
+
+}
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+.gradient-text{
+
+    background:linear-gradient(90deg,#EC4899,#F472B6);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.card{
+
+    background:white;
+
+}
+
+textarea{
+
+    resize:none;
+
+    border-radius:15px !important;
+
+}
+
+.btn-primary{
+
+    background:#EC4899;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 35px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#DB2777;
+
+    transform:translateY(-2px);
+
+}

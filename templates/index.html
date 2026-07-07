@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskCrafterAI</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-stars"></i>
+                TaskCrafterAI
+            </a>
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="text-center mb-5">
+
+                        <h1 class="display-4 fw-bold">
+
+                            Turn Meeting Notes into
+                            <span class="gradient-text">
+                                Actionable Tasks
+                            </span>
+
+                        </h1>
+
+                        <p class="lead text-secondary">
+
+                            Paste meeting notes, let AI extract tasks,
+                            assign owners, deadlines and priorities instantly.
+
+                        </p>
+
+                    </div>
+
+                    <div class="card shadow-lg border-0 rounded-4 p-4">
+
+                        <h4 class="mb-3">
+
+                            <i class="bi bi-journal-text"></i>
+
+                            Meeting Notes
+
+                        </h4>
+
+                        <form action="/generate" method="POST" onsubmit="showLoading()">
+
+                            <textarea
+                                name="meeting_notes"
+                                class="form-control mb-4"
+                                rows="10"
+                                placeholder="Paste your meeting notes here..."
+                                required>{{ meeting_notes }}</textarea>
+
+                            <div class="text-center">
+
+                                <button class="btn btn-primary btn-lg px-5">
+
+                                    <i class="bi bi-stars"></i>
+
+                                    Generate Tasks
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <div
+        class="modal fade"
+        id="loadingModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content text-center p-5">
+
+                <div class="spinner-border text-primary mb-3"></div>
+
+                <h4>✨ AI is extracting tasks...</h4>
+
+                <p>Please wait...</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+    function showLoading(){
+
+        const modal = new bootstrap.Modal(
+            document.getElementById("loadingModal")
+        );
+
+        modal.show();
+
+    }
+
+    </script>
+
+</body>
+
+</html>
