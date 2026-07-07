@@ -80,14 +80,42 @@ python app.py
 
 ## 📸 Screenshots
 
-Add screenshots here:
+## Screenshots
 
-- Home Page
-- Dashboard
-- Edit Task
-- Search
+### Home Page
+
+![Home](screenshots/home.png)
+
+![Home](screenshots/home2.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Edit Task
+
+![Edit](screenshots/edit.png)
+
+### Search
+
+![Search](screenshots/search.png)
 
 ---
+
+
+## 🏗️ Application Flow
+
+Meeting Notes
+      ↓
+Google Gemini AI
+      ↓
+Structured JSON Tasks
+      ↓
+SQLite Database
+      ↓
+Task Dashboard
+      ↓
+Edit • Delete • Search • Statistics
 
 ## 🔮 Future Enhancements
 
