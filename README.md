@@ -132,3 +132,14 @@ Edit • Delete • Search • Statistics
 ## 👨‍💻 Author
 
 **Kunj Ramoliya**
+
+## 💬 Feedback & Contributions
+
+Thank you for checking out **TaskCrafterAI**!
+
+If you have any suggestions, ideas, or find any issues, feel free to:
+- ⭐ Star this repository if you found it useful.
+- 🐞 Open an issue to report bugs or suggest improvements.
+- 🔀 Submit a pull request with enhancements or fixes.
+
+Constructive feedback is always appreciated and will help improve this project.
